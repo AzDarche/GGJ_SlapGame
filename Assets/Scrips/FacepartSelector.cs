@@ -27,4 +27,9 @@ public class FacepartSelector : MonoBehaviour
 
     }
 
+    public void DamageSelectedPart(int damage)
+    {
+        Part.TakeDamage(damage);
+    }
+
 }
