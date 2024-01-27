@@ -13,6 +13,7 @@ namespace Scrips {
         }
 
         public virtual void OnExit() {
+            _stateMachine.StorePastState(this);
             Debug.Log("Exit State " + this);
         }
 
