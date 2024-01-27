@@ -54,7 +54,7 @@ namespace Scrips {
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                _fill += 0.05f + (dificultad/150f);
+                _fill += (0.05f + dificultad/150f) * Time.timeScale;
             }
             if (_time >= 5.00f)
             {

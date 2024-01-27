@@ -1,4 +1,5 @@
-﻿using Scrips.States;
+﻿using System;
+using Scrips.States;
 using UnityEngine;
 
 namespace Scrips {
@@ -8,13 +9,21 @@ namespace Scrips {
 
         private State _currentState;
         private State _pastState;
+        public GameObject precisionBar;
+        public GameObject powerBar;
+
 
         private void Awake() {
             //Singleton Logic
             if  (Instance != null && Instance != this)
                 Destroy(this);
             Instance = this;
+            //Initialize Machine
             ChangeState(new StartMatchState(this));
+        }
+
+        private void Update() {
+            if (Input.GetKeyDown(KeyCode.Escape)) _currentState.Pause();
         }
 
         public void ChangeState(State newState) {
@@ -23,7 +32,7 @@ namespace Scrips {
             _currentState.OnEnter();
         }
 
-        private void ReturnState() {
+        public void ReturnState() {
             ChangeState(_pastState);
         }
 

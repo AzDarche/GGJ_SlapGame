@@ -1,8 +1,9 @@
+using Scrips.States;
 using UnityEngine;
 
 namespace Scrips {
     public abstract class State {
-        private StateMachine _stateMachine;
+        protected StateMachine _stateMachine;
 
         protected State(StateMachine stateMachine) {
             this._stateMachine = stateMachine;
@@ -19,6 +20,10 @@ namespace Scrips {
 
         public virtual void Execute() {
             Debug.Log("Execute State " + this);
+        }
+
+        public virtual void Pause() {
+            _stateMachine.ChangeState(new PauseState(_stateMachine));
         }
     }
 }
