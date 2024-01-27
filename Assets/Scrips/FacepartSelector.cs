@@ -22,7 +22,7 @@ public class FacepartSelector : MonoBehaviour
 
     private void ShowStats()
     {
-        HealtStat.text = ((Part._healtpoints * 100) / 8).ToString();
+        HealtStat.text = ((Part.healtpoints * 100) / 8).ToString();
         Name.text = Part.name;
 
     }
