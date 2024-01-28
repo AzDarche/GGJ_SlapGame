@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5dc29fb3491d9784aa28ee186f385a4b
+guid: a17c241cf1527f946a7adf25b4f0ea43
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boca 2_0
+      name: Boca Personaje 2_1
       rect:
         serializedVersion: 2
-        x: 275
-        y: 308
-        width: 401
-        height: 253
+        x: 281
+        y: 349
+        width: 280
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8794895101f71a147aa94cd506cec1bf
-      internalID: 1690805091
+      spriteID: 05aa7097c85320a4687772f8fc45b31c
+      internalID: 1707236269
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Boca 2_0: 1690805091
+      Boca Personaje 2_0: 253358601
+      Boca Personaje 2_1: 1707236269
+      Boca Personaje 2_2: -869552198
+      Boca Personaje 2_3: 1415222284
+      Boca Personaje 2_4: -895344221
+      Boca Personaje 2_5: -1030010035
+      Boca Personaje 2_6: 532653662
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

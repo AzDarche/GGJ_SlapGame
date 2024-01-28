@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5dc29fb3491d9784aa28ee186f385a4b
+guid: fdde84d7e94aa19448b28bb4457803f1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boca 2_0
+      name: Nariz Personaje 2_1
       rect:
         serializedVersion: 2
-        x: 275
-        y: 308
-        width: 401
-        height: 253
+        x: 305
+        y: 485
+        width: 166
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8794895101f71a147aa94cd506cec1bf
-      internalID: 1690805091
+      spriteID: cc3ed60f360c0b3479821990eb10882f
+      internalID: -1906551190
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Boca 2_0: 1690805091
+      Nariz Personaje 2_0: -658175731
+      Nariz Personaje 2_1: -1906551190
+      Nariz Personaje 2_2: -221116306
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

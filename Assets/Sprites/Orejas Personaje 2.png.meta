@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5dc29fb3491d9784aa28ee186f385a4b
+guid: 5be350bf6c3fc3b4da3b4ae80916f896
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boca 2_0
+      name: Orejas Personaje 2_1
       rect:
         serializedVersion: 2
-        x: 275
-        y: 308
-        width: 401
-        height: 253
+        x: 184
+        y: 487
+        width: 646
+        height: 189
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8794895101f71a147aa94cd506cec1bf
-      internalID: 1690805091
+      spriteID: aacb9229b459c0d428d821364616a8f3
+      internalID: 1241144847
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Boca 2_0: 1690805091
+      Orejas Personaje 2_0: -1591966635
+      Orejas Personaje 2_1: 1241144847
+      Orejas Personaje 2_2: 122829855
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

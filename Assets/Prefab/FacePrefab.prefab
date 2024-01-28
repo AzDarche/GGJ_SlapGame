@@ -38,7 +38,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -26, y: -111.5}
+  m_AnchoredPosition: {x: -17.8, y: -106.9}
   m_SizeDelta: {x: 256, y: 99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &473568819323483717
@@ -149,8 +149,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: 
   normalStage: {fileID: -1880762909, guid: 5776fb561beb726469d49112b4fb7f70, type: 3}
-  damageStage: {fileID: -1880762909, guid: 5776fb561beb726469d49112b4fb7f70, type: 3}
-  extremeStage: {fileID: -1880762909, guid: 5776fb561beb726469d49112b4fb7f70, type: 3}
+  damageStage: {fileID: 1690805091, guid: 5dc29fb3491d9784aa28ee186f385a4b, type: 3}
+  extremeStage: {fileID: 72019956, guid: 35d9072e32d9ae0428419cbb4d0bd129, type: 3}
   imageSprite: {fileID: 0}
   baseSprite: {fileID: 0}
   healthPoints: 8
@@ -481,7 +481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -76.99994, y: 52}
+  m_AnchoredPosition: {x: -81, y: 46.7}
   m_SizeDelta: {x: 154, y: 228}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &473568819557567591
@@ -960,6 +960,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 776b7a49a1eee9045a7c7552a4877d21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _partsList:
+  - {fileID: 473568820602811250}
+  - {fileID: 473568819536647608}
+  - {fileID: 473568819557567584}
+  - {fileID: 473568819323483718}
   healthStat: {fileID: 473568821387879027}
   Name: {fileID: 473568820417264269}
 --- !u!1 &473568820189428098
@@ -1404,7 +1409,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 49, y: 52}
+  m_AnchoredPosition: {x: 56, y: 33}
   m_SizeDelta: {x: 632, y: 190}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &473568820602811249
@@ -1515,7 +1520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: 
   normalStage: {fileID: -1420565453, guid: b768ab4b9581bc2448e5b4158a8023ca, type: 3}
-  damageStage: {fileID: -866367819, guid: 4a2a1e6dc3604f94990517b96bb03484, type: 3}
+  damageStage: {fileID: -230702096, guid: 01a43baed4073a642a31b5bb6100fadb, type: 3}
   extremeStage: {fileID: -866367819, guid: 4a2a1e6dc3604f94990517b96bb03484, type: 3}
   imageSprite: {fileID: 0}
   baseSprite: {fileID: 0}

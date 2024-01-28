@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5dc29fb3491d9784aa28ee186f385a4b
+guid: b20c825a434045b46a47f413f7483236
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,12 +105,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boca 2_0
+      name: Ojos Personaje 2_0
       rect:
         serializedVersion: 2
-        x: 275
-        y: 308
-        width: 401
+        x: 221
+        y: 477
+        width: 403
         height: 253
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8794895101f71a147aa94cd506cec1bf
-      internalID: 1690805091
+      spriteID: 3bea7df5720ee7a4a8d14aacbff5609a
+      internalID: -1589737271
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Boca 2_0: 1690805091
+      Ojos Personaje 2_0: -1589737271
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
