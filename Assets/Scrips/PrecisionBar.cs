@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Scrips.States;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -6,7 +7,7 @@ using Random = UnityEngine.Random;
 namespace Scrips {
     public class PrecisionBar : MonoBehaviour {
 
-        public float damage;
+        public int damage;
         [SerializeField] private int damageAccumulated = 1;
         [SerializeField] private GameObject difficultyBar;
         [SerializeField] private GameObject cursor;
@@ -31,7 +32,8 @@ namespace Scrips {
             if (Input.GetKeyDown(KeyCode.Space) && !_isStopped){
                 CalculateDamage();
                 _isStopped = true;
-                _stateMachine.ChangeState(new ApplyDamageState(_stateMachine));
+                _stateMachine.damage = damage;
+                StartCoroutine(ChangeState());
             }
         }
 
@@ -69,15 +71,19 @@ namespace Scrips {
             var cursorPosition = _cursorTransform.position.y;
             var difficultyPosition = _difficultyTransform.position.y;
             var difference = Math.Abs(difficultyPosition - cursorPosition);
-            damage = (2 + _missFactor - difference) * 100 / (2 + _missFactor);
-            damage = damage switch {
+            var tempDamage = (2 + _missFactor - difference) * 100 / (2 + _missFactor);
+            damage = tempDamage switch {
                 > 89 => 100,
                 > 74 => 75,
                 > 40 => 50,
                 _ => 0
             };
-        
             damage = damage / 100 * damageAccumulated;
+        }
+
+        private IEnumerator ChangeState() {
+            yield return new WaitForSeconds(2);
+            _stateMachine.ChangeState(new ApplyDamageState(_stateMachine));
         }
     
     }

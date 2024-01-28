@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: 
-  healtpoints: 8
+  healthPoints: 8
 --- !u!1 &473568819410096017
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,7 +432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: 
-  healtpoints: 8
+  healthPoints: 8
 --- !u!1 &473568819557567595
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,7 +581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: 
-  healtpoints: 8
+  healthPoints: 8
 --- !u!1 &473568819744849849
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,7 +945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 776b7a49a1eee9045a7c7552a4877d21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealtStat: {fileID: 473568821387879027}
+  healthStat: {fileID: 473568821387879027}
   Name: {fileID: 473568820417264269}
 --- !u!1 &473568820189428098
 GameObject:
@@ -1093,7 +1093,7 @@ GameObject:
   - component: {fileID: 473568820417264270}
   - component: {fileID: 473568820417264269}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: Namae
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1499,7 +1499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: 
-  healtpoints: 8
+  healthPoints: 8
 --- !u!1 &473568821059300171
 GameObject:
   m_ObjectHideFlags: 0
@@ -1751,7 +1751,7 @@ GameObject:
   - component: {fileID: 473568821387879020}
   - component: {fileID: 473568821387879027}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

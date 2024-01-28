@@ -6,5 +6,10 @@
             base.OnEnter();
             _stateMachine.powerBar.gameObject.SetActive(true);
         }
+
+        public override void OnExit() {
+            base.OnExit();
+            _stateMachine.powerBar.gameObject.SetActive(false);
+        }
     }
 }

@@ -3,6 +3,14 @@
         
         public SelectObjectiveState(StateMachine stateMachine) : base(stateMachine) { }
 
-       
+        public override void OnEnter() {
+            base.OnEnter();
+            _stateMachine.faceSelector.gameObject.SetActive(true);
+        }
+
+        public override void OnExit() {
+            base.OnExit();
+            _stateMachine.faceSelector.gameObject.SetActive(false);
+        }
     }
 }

@@ -1,36 +1,39 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FacePartStats : MonoBehaviour
-{
-   public string name;
-   private Button _BttnPart;
-   private GameObject facepart;
-   public int healtpoints = 8;
+namespace Scrips {
+   public class FacePartStats : MonoBehaviour {
 
-   private void Awake()
-   {
-      facepart = gameObject;
-      _BttnPart = gameObject.GetComponent<Button>();
-      name = facepart.name;
-   }
-   
-
-   public void TakeDamage(int damage)
-   {
-      healtpoints -= damage;
-      if (healtpoints <= 0)
-      {
-         _BttnPart.interactable = false;
+      public FacePartStats(string namae) {
+         name = namae;
       }
-   }
+      
+      public new string name;
+      private Button _buttonPart;
+      private GameObject _facePart;
+      public int healthPoints = 8;
 
-   public void Heal()
-   {
-      healtpoints += 1;
-   }
+      private void Awake()
+      {
+         _facePart = gameObject;
+         _buttonPart = gameObject.GetComponent<Button>();
+         name = _facePart.name;
+      }
    
+
+      public void TakeDamage(int damage)
+      {
+         healthPoints -= damage;
+         if (healthPoints <= 0)
+         {
+            _buttonPart.interactable = false;
+         }
+      }
+
+      public void Heal()
+      {
+         healthPoints += 1;
+      }
+   
+   }
 }
