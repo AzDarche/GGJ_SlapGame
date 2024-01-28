@@ -58,7 +58,6 @@ namespace Scrips {
                     _storedDamage = 4;
                 }
                 StateMachine.Instance.damage = _storedDamage;
-                Debug.Log(_stateMachine.damage +" " + _storedDamage );
             }
         }
     

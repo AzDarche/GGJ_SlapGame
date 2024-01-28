@@ -148,6 +148,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: 
+  normalStage: {fileID: -1880762909, guid: 5776fb561beb726469d49112b4fb7f70, type: 3}
+  damageStage: {fileID: -1880762909, guid: 5776fb561beb726469d49112b4fb7f70, type: 3}
+  extremeStage: {fileID: -1880762909, guid: 5776fb561beb726469d49112b4fb7f70, type: 3}
+  imageSprite: {fileID: 0}
+  baseSprite: {fileID: 0}
   healthPoints: 8
 --- !u!1 &473568819410096017
 GameObject:
@@ -432,6 +437,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: 
+  normalStage: {fileID: -243717677, guid: b8cdfc758ed2bb9419b111dc6b04f5c7, type: 3}
+  damageStage: {fileID: 1677645850, guid: 76969732356919c45adbdf3da68d6766, type: 3}
+  extremeStage: {fileID: -1615263560, guid: 3ca5d7e7148556449a4f84c6d97fbc62, type: 3}
+  imageSprite: {fileID: 0}
+  baseSprite: {fileID: 0}
   healthPoints: 8
 --- !u!1 &473568819557567595
 GameObject:
@@ -581,6 +591,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: 
+  normalStage: {fileID: -1735252743, guid: 2af12108942312545820cea01a805f63, type: 3}
+  damageStage: {fileID: 2006164346, guid: b5cfd7c717fcf0948abb7e27c0213471, type: 3}
+  extremeStage: {fileID: 2006164346, guid: b5cfd7c717fcf0948abb7e27c0213471, type: 3}
+  imageSprite: {fileID: 0}
+  baseSprite: {fileID: 0}
   healthPoints: 8
 --- !u!1 &473568819744849849
 GameObject:
@@ -1389,7 +1404,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 47, y: 33}
+  m_AnchoredPosition: {x: 49, y: 52}
   m_SizeDelta: {x: 632, y: 190}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &473568820602811249
@@ -1499,6 +1514,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: 
+  normalStage: {fileID: -1420565453, guid: b768ab4b9581bc2448e5b4158a8023ca, type: 3}
+  damageStage: {fileID: -866367819, guid: 4a2a1e6dc3604f94990517b96bb03484, type: 3}
+  extremeStage: {fileID: -866367819, guid: 4a2a1e6dc3604f94990517b96bb03484, type: 3}
+  imageSprite: {fileID: 0}
+  baseSprite: {fileID: 0}
   healthPoints: 8
 --- !u!1 &473568821059300171
 GameObject:
