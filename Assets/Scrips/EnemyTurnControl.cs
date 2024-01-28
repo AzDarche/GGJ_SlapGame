@@ -8,7 +8,7 @@ namespace Scrips {
         [SerializeField] private List<Parts> playerParts;
 
         public void DamageRandomPart() {
-            playerParts[Random.Range(0, 3)].TakeDamage(Random.Range(1, 4));
+            playerParts[Random.Range(0, 3)].TakeDamage(Random.Range(1, 3));
         }
 
         public int GetPlayerLife() => playerParts.Sum(part => part.life);

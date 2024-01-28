@@ -82,9 +82,9 @@ namespace Scrips {
             var difference = Math.Abs(difficultyPosition - cursorPosition);
             var tempDamage = (2 + _missFactor - difference) * 100 / (2 + _missFactor);
             damage = tempDamage switch {
-                > 89 => 100,
-                > 74 => 75,
-                > 40 => 50,
+                > 80 => 100,
+                > 50 => 75,
+                > 10 => 50,
                 _ => 0
             };
             damage = damage / 100 * damageAccumulated;
