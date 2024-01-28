@@ -213,6 +213,23 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3714615846001133411, guid: 732e227e87bb0c6489d90441180e9aa3, type: 3}
   m_PrefabInstance: {fileID: 1249652955}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &473421548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 25714812354972319, guid: 45110f015ed0d6542b1f27286c1b4c57, type: 3}
+  m_PrefabInstance: {fileID: 1525075816}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &473421551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473421548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a0924ae044f4584beef686698420da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &606605781
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,7 +277,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &635117597
 Transform:
   m_ObjectHideFlags: 0
@@ -361,6 +378,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &745591582 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3714615846001133439, guid: 732e227e87bb0c6489d90441180e9aa3, type: 3}
+  m_PrefabInstance: {fileID: 1249652955}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &805484170
 GameObject:
   m_ObjectHideFlags: 0
@@ -1190,6 +1212,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerBar
       objectReference: {fileID: 0}
+    - target: {fileID: 3714615846001133439, guid: 732e227e87bb0c6489d90441180e9aa3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 732e227e87bb0c6489d90441180e9aa3, type: 3}
 --- !u!1 &1311087371
@@ -1567,7 +1593,7 @@ PrefabInstance:
     - target: {fileID: 9022111330204643839, guid: 45110f015ed0d6542b1f27286c1b4c57, type: 3}
       propertyPath: powerBar
       value: 
-      objectReference: {fileID: 2093571832}
+      objectReference: {fileID: 745591582}
     - target: {fileID: 9022111330204643839, guid: 45110f015ed0d6542b1f27286c1b4c57, type: 3}
       propertyPath: faceSelector
       value: 
@@ -1575,7 +1601,11 @@ PrefabInstance:
     - target: {fileID: 9022111330204643839, guid: 45110f015ed0d6542b1f27286c1b4c57, type: 3}
       propertyPath: precisionBar
       value: 
-      objectReference: {fileID: 635117596}
+      objectReference: {fileID: 1827392238}
+    - target: {fileID: 9022111330204643839, guid: 45110f015ed0d6542b1f27286c1b4c57, type: 3}
+      propertyPath: _enemyTurnControl
+      value: 
+      objectReference: {fileID: 473421551}
     - target: {fileID: 9022111330204643839, guid: 45110f015ed0d6542b1f27286c1b4c57, type: 3}
       propertyPath: onomatopeyasEnemy
       value: 
@@ -1600,6 +1630,10 @@ PrefabInstance:
     - target: {fileID: 16387794848919824, guid: 37d5a94cacba96745b4f21dce8fdbdeb, type: 3}
       propertyPath: m_Name
       value: BarraPresc
+      objectReference: {fileID: 0}
+    - target: {fileID: 16387794848919824, guid: 37d5a94cacba96745b4f21dce8fdbdeb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 16387794848919826, guid: 37d5a94cacba96745b4f21dce8fdbdeb, type: 3}
       propertyPath: m_RootOrder
@@ -1768,6 +1802,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1827392238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 16387794848919824, guid: 37d5a94cacba96745b4f21dce8fdbdeb, type: 3}
+  m_PrefabInstance: {fileID: 1536020771}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1922534210
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2001,7 +2040,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2093571833
 Transform:
   m_ObjectHideFlags: 0
