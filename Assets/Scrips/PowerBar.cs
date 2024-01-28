@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Scrips.States;
 using TMPro;
@@ -21,6 +22,14 @@ namespace Scrips {
 
         private void Awake() {
             _stateMachine = StateMachine.Instance;
+        }
+
+        private void OnEnable()
+        {
+            Debug.Log("a mi ano");
+            _fill = 0;
+            _time = 0;
+            _timeStop = true;
         }
 
         // Start is called before the first frame update
