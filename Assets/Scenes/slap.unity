@@ -1115,6 +1115,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerBar
       objectReference: {fileID: 0}
+    - target: {fileID: 3714615846001133439, guid: 732e227e87bb0c6489d90441180e9aa3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 732e227e87bb0c6489d90441180e9aa3, type: 3}
 --- !u!1 &1311087371
@@ -1441,6 +1445,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 473421551, guid: 45110f015ed0d6542b1f27286c1b4c57, type: 3}
+      propertyPath: playerParts.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 473421551, guid: 45110f015ed0d6542b1f27286c1b4c57, type: 3}
+      propertyPath: playerParts.Array.data[0].life
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 473421551, guid: 45110f015ed0d6542b1f27286c1b4c57, type: 3}
+      propertyPath: playerParts.Array.data[1].life
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 473421551, guid: 45110f015ed0d6542b1f27286c1b4c57, type: 3}
+      propertyPath: playerParts.Array.data[2].life
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 473421551, guid: 45110f015ed0d6542b1f27286c1b4c57, type: 3}
+      propertyPath: playerParts.Array.data[3].life
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 473421551, guid: 45110f015ed0d6542b1f27286c1b4c57, type: 3}
+      propertyPath: playerParts.Array.data[1].PartName
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 473421551, guid: 45110f015ed0d6542b1f27286c1b4c57, type: 3}
+      propertyPath: playerParts.Array.data[2].PartName
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 473421551, guid: 45110f015ed0d6542b1f27286c1b4c57, type: 3}
+      propertyPath: playerParts.Array.data[3].PartName
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 25714812354972319, guid: 45110f015ed0d6542b1f27286c1b4c57, type: 3}
       propertyPath: m_Name
       value: GameManager
