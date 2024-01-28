@@ -1,30 +1,32 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Scrips {
     public class EnemyTurnControl : MonoBehaviour {
-        private List<FacePartStats> _playerFaceParts;
+        public List<Parts> PlayerParts;
 
         private void Awake() {
-            PopulateParts();
+            PlayerParts = new List<Parts>();
         }
 
-        private void PopulateParts() {
-            var namae = "";
-            for (var i = 0; i < 4; i++) {
-                namae = i switch {
-                    0 => "Orejas",
-                    1 => "Ojos",
-                    2 => "Boca",
-                    3 => "Nariz",
-                    _ => namae
-                };
-                _playerFaceParts.Add(new FacePartStats(namae));
-            }
-        }
 
         public void DamageRandomPart() {
-            _playerFaceParts[Random.Range(0, 3)].TakeDamage(Random.Range(1, 4));
+            PlayerParts[Random.Range(0, 3)].TakeDamage(Random.Range(1, 4));
         }
+    }
+
+    public struct Parts {
+        public PartName PartName;
+        private int _life;
+
+        public void TakeDamage(int damage) {
+            _life += damage;
+        }
+    }
+
+    public enum PartName {
+        Ojos, Orejas, Boca, Nariz
     }
 }
