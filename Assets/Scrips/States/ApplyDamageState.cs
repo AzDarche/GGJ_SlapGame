@@ -10,7 +10,7 @@
 
         public override void Execute() {
             base.Execute();
-            _stateMachine.ChangeState(new PlayerTurnState(_stateMachine));
+            _stateMachine.ChangeState(new EnemyTurnState(_stateMachine));
         }
     }
 }

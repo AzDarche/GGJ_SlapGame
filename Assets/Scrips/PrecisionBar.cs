@@ -23,9 +23,17 @@ namespace Scrips {
     
         private void Awake() {
             _stateMachine  = StateMachine.Instance;
+        }
+
+        public void Initialize() {
+            damageAccumulated = _stateMachine.damage;
             _missFactor = 5 - damageAccumulated;
             SetDifficultyBar();
             SetCursor();
+        }
+
+        public void ReStart() {
+            _isStopped = false;
         }
 
         private void Update() {
