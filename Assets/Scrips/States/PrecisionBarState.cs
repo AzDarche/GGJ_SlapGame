@@ -14,6 +14,7 @@
 
         public override void OnExit() {
             base.OnExit();
+            _handler.ReStart();
             _handler.gameObject.SetActive(false);
         }
     }

@@ -26,7 +26,6 @@ namespace Scrips {
 
         private void OnEnable()
         {
-            Debug.Log("a mi ano");
             _fill = 0;
             _time = 0;
             _timeStop = true;
@@ -54,6 +53,12 @@ namespace Scrips {
             else {
                 _storedDamage = (int)math.floor(_fill * 4f);
                 daño.text = (_storedDamage).ToString("F0");
+                if (_storedDamage > 4)
+                {
+                    _storedDamage = 4;
+                }
+                StateMachine.Instance.damage = _storedDamage;
+                Debug.Log(_stateMachine.damage +" " + _storedDamage );
             }
         }
     
@@ -62,7 +67,6 @@ namespace Scrips {
                 _fill += (0.05f + dificultad/150f) * Time.timeScale;
             if (_time >= 5.00f) {
                 _timeStop = false;
-                _stateMachine.damage = _storedDamage;
                 StartCoroutine(ChangeState());
             }
         }

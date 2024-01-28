@@ -34,6 +34,7 @@ namespace Scrips {
 
         public void ReStart() {
             _isStopped = false;
+            _cursorSpeed = 2;
         }
 
         private void Update() {
