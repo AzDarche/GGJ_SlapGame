@@ -1,4 +1,6 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
+using AudioManager;
 using Scrips.States;
 using UnityEngine;
 
@@ -21,6 +23,12 @@ namespace Scrips {
         public GameObject onomatopeyasEnemy;
         public int damage;
         public int turns;
+        [Header("Sound")]
+        [SerializeField] private AudioSource backgroundSource;
+        [SerializeField] private AudioSource effectsSource;
+        [SerializeField] private List<SoundEvent> punchSoundEffects;
+        [SerializeField] private SoundEvent backgroundSound;
+        [SerializeField] private SoundEvent victorySound;
 
         private void Awake() {
             //Singleton Logic
@@ -74,6 +82,18 @@ namespace Scrips {
                 ChangeState(new DefeatState(this));
             else 
                 ChangeState(new VictoryState(this));
+        }
+
+        public void PlayPunch() {
+            punchSoundEffects[Random.Range(0, punchSoundEffects.Count)].Play(effectsSource);
+        }
+
+        public void PlayBackground() {
+            backgroundSound.Play(backgroundSource);
+        }
+
+        public void PlayVictory() {
+            victorySound.Play(effectsSource);
         }
     }
 }

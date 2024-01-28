@@ -7,6 +7,7 @@
         public override void OnEnter() {
             base.OnEnter();
             _stateMachine.StartCoroutine(_stateMachine.ChangeState(new PlayerTurnState(_stateMachine), 2));
+            _stateMachine.PlayBackground();
         }
     }
 }

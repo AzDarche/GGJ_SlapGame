@@ -11,6 +11,7 @@ namespace Scrips.States {
             base.OnEnter();
             _stateMachine.StartCoroutine(_stateMachine.HandleEnemyTurn());
             _onomatopeya = _stateMachine.onomatopeyasPlayer.transform.GetChild(Random.Range(0, 2)).gameObject;
+            _stateMachine.PlayPunch();
             _onomatopeya.SetActive(true);
         }
 

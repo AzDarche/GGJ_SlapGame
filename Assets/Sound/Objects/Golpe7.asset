@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eedc5eeb4911c6849b52bccc847ac9b8, type: 3}
+  m_Name: Golpe7
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 2e2d746b997181941957a93eea178a63, type: 3}
+  mixerGroup: {fileID: 24300002, guid: e4519415bc2ae2a4cb79862aeaac9085, type: 2}
+  volume:
+    minValue: 1.07
+    maxValue: 0.94
+  pitch:
+    minValue: 1.01
+    maxValue: 0.89

@@ -6,6 +6,7 @@
         public override void OnEnter() {
             base.OnEnter();
             _stateMachine.victoryScreen.SetActive(true);
+            _stateMachine.PlayVictory();
         }
 
         public override void OnExit() {

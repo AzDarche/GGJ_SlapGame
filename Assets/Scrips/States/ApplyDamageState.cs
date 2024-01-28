@@ -10,6 +10,7 @@ namespace Scrips.States {
         public override void OnEnter() {
             base.OnEnter();
             _onomatopeya = _stateMachine.onomatopeyasEnemy.transform.GetChild(Random.Range(0, 2)).gameObject;
+            _stateMachine.PlayPunch();
             _onomatopeya.SetActive(true);
             _stateMachine.ApplyDamage();
         }
