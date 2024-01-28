@@ -1,21 +1,26 @@
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using Scrips.States;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace Scrips {
-    public class FacePartSelector : MonoBehaviour
-    {
+    public class FacePartSelector : MonoBehaviour {
+        
         private int _selectedPart;
         private StateMachine _stateMachine;
         private FacePartStats _part;
+        [SerializeField] private List<FacePartStats> _partsList;
         [SerializeField] private TextMeshProUGUI healthStat;
         [SerializeField] private TextMeshProUGUI Name;
 
         private void Awake() {
             _stateMachine = StateMachine.Instance;
         }
+
+        public int GetEnemyLife() => _partsList.Sum(part => part.healthPoints);
 
         public void GetButtonName()
         {

@@ -1,15 +1,17 @@
-
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace Scrips {
     public class EnemyTurnControl : MonoBehaviour {
         [SerializeField] private List<Parts> playerParts;
-        
+
         public void DamageRandomPart() {
             playerParts[Random.Range(0, 3)].TakeDamage(Random.Range(1, 4));
         }
+
+        public int GetPlayerLife() => playerParts.Sum(part => part.life);
     }
     
     [System.Serializable]

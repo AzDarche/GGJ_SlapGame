@@ -10,13 +10,17 @@ namespace Scrips {
         private State _currentState;
         private State _pastState;
         private FacePartStats _faceObjective;
-        [SerializeField] private EnemyTurnControl _enemyTurnControl;
+        [SerializeField] private EnemyTurnControl enemyTurnControl;
+        [SerializeField] private FacePartSelector facePartSelector;
+        public GameObject victoryScreen;
+        public GameObject defeatScreen;
         public GameObject precisionBar;
         public GameObject powerBar;
-        public GameObject faceSelector;
+        public GameObject objectiveSelector;
         public GameObject onomatopeyasPlayer;
         public GameObject onomatopeyasEnemy;
         public int damage;
+        public int turns;
 
         private void Awake() {
             //Singleton Logic
@@ -60,9 +64,16 @@ namespace Scrips {
         }
 
         public IEnumerator HandleEnemyTurn() {
-            _enemyTurnControl.DamageRandomPart();
+            enemyTurnControl.DamageRandomPart();
             yield return new WaitForSeconds(2);
             ChangeState(new PlayerTurnState(this));
+        }
+
+        public void CalculateWinner() {
+            if (enemyTurnControl.GetPlayerLife() < facePartSelector.GetEnemyLife())
+                ChangeState(new DefeatState(this));
+            else 
+                ChangeState(new VictoryState(this));
         }
     }
 }
