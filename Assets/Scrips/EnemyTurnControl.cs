@@ -18,9 +18,30 @@ namespace Scrips {
     public class Parts {
         public PartName PartName = PartName.Ojos;
         public int life = 8;
+        [SerializeField] private SpriteRenderer baseSprite;
+        [SerializeField] private Sprite normalStage;
+        [SerializeField] private Sprite damageStage;
+        [SerializeField] private Sprite extremeStage;
 
+        
         public void TakeDamage(int damage) {
             life -= damage;
+            RefreshSprite();
+        }
+        private void RefreshSprite()
+        {
+            switch (life)
+            {
+                case > 4:
+                    baseSprite.sprite = normalStage;
+                    break;
+                case > 0 and <= 4:
+                    baseSprite.sprite = damageStage;
+                    break;
+                case <= 0:
+                    baseSprite.sprite = extremeStage;
+                    break;
+            }
         }
     }
 

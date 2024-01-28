@@ -26,7 +26,7 @@ namespace Scrips {
          imageSprite = gameObject.GetComponent<Image>();
          _buttonPart = gameObject.GetComponent<Button>();
          name = _facePart.name;
-         GameObject go =  GameObject.Find(name + " 1");
+         GameObject go =  GameObject.Find(name + " Base");
          baseSprite = go.GetComponent<SpriteRenderer>();
       }
    
